@@ -1,0 +1,206 @@
+p {
+  color: $gray !important;
+  font-size: 16px;
+  font-weight: 400;
+}
+.menu {
+  display: none;
+}
+.section1 {
+  margin-top: 8rem;
+  img {
+    cursor: pointer;
+    z-index: -1;
+  }
+  .bgRectangle1 {
+    position: absolute;
+    bottom: -27rem;
+    left: -55rem;
+  }
+  .bgRectangle2 {
+    position: absolute;
+    bottom: -25rem;
+    left: 0;
+  }
+}
+.section2 {
+  margin-top: 25rem;
+}
+.section3 {
+  margin-top: 8rem;
+  overflow: hidden;
+  div {
+    &:first-child {
+      position: relative;
+      .bgRectangle {
+        position: absolute;
+        left: -50rem;
+        top: 20rem;
+      }
+      .d {
+        position: absolute;
+        top: -10rem;
+        right: -60rem;
+      }
+      .u {
+        position: absolute;
+        top: 35rem;
+        right: -60rem;
+      }
+    }
+  }
+}
+.section4 {
+  transform: translateY(22rem);
+  .calculator {
+    margin-top: 6rem !important;
+    border-radius: 10px;
+    padding: 4rem;
+    z-index: 1;
+    form {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10rem;
+
+      button {
+        width: 20%;
+      }
+    }
+  }
+}
+.bgWhite {
+  background-color: $bgWhite;
+  text-align: center;
+  padding-top: 37rem;
+  padding-bottom: 10rem;
+  z-index: -1;
+  .shadow:not(.purple) {
+    &:hover {
+      background-color: darken($gray, 2%);
+      button {
+        background-color: $darkBlue;
+        border: none !important;
+      }
+    }
+  }
+  .container {
+    .row {
+      justify-content: center;
+      div {
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 33%;
+      }
+    }
+  }
+  .purple {
+    background-color: $darkBlue;
+  }
+}
+.bgLightBlue {
+  background-color: $darkBlue;
+  padding: 10rem 0;
+  position: relative;
+  z-index: -2;
+  overflow: hidden;
+  h4 {
+    padding: 0 26rem;
+  }
+  .row {
+    margin-top: 15rem;
+    .smart {
+      transform: translateX(-7rem);
+    }
+    .col:first-child {
+      padding-right: 24rem;
+      p {
+        letter-spacing: 1.5px;
+      }
+    }
+  }
+  .statistic {
+    position: absolute;
+    left: 0;
+    padding-top: 15rem;
+  }
+  .invest {
+    p {
+      padding-right: 8rem;
+    }
+  }
+  .profit {
+    padding-top: 65rem;
+  }
+
+  .o1 {
+    position: absolute;
+    top: -43rem;
+    left: 15rem;
+    z-index: -1;
+  }
+  .o2 {
+    position: absolute;
+    bottom: -35rem;
+    right: -30rem;
+    transform: rotate(174deg);
+    z-index: -1;
+  }
+}
+.bgGradient {
+  padding: 10rem 0;
+  background-color: $blue; /* For browsers that do not support gradients */
+  background-image: linear-gradient($darkBlue, $blue);
+  position: relative;
+  .subscribe {
+    position: relative;
+    background-color: $lightBlue;
+    padding: 5rem 3rem;
+    button {
+      position: absolute;
+      z-index: 3;
+      &:hover {
+        background-color: $gray;
+      }
+    }
+    input {
+      width: 70%;
+      &::placeholder {
+        color: $gray;
+      }
+    }
+    .eth_bg {
+      position: absolute;
+      top: 0;
+      left: 1rem;
+    }
+    .btc_bg {
+      position: absolute;
+      bottom: 0;
+      right: 3rem;
+    }
+  }
+  .bgRectangleBig {
+    &1 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    &2 {
+      position: absolute;
+      bottom: 0;
+      right: 0rem;
+    }
+  }
+}
+.section8 {
+  padding: 10rem 0;
+  .payment {
+    img {
+      width: 20%;
+    }
+  }
+}

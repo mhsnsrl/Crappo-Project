@@ -1,0 +1,157 @@
+@media (max-width: 1200px) {
+  html {
+    font-size: 9px;
+  }
+  .section1 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    span {
+      margin: auto;
+    }
+    div {
+      width: 100%;
+    }
+  }
+  .section3 {
+    div {
+      width: 50%;
+    }
+  }
+  .bgLightBlue {
+    .container {
+      h4 {
+        padding: 0 5rem;
+      }
+    }
+  }
+  .bgGradient {
+    input {
+      width: 60% !important;
+    }
+  }
+  .section8 {
+    div:last-child {
+      img {
+        width: 20%;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .section4 .calculator {
+    width: 100% !important;
+  }
+  .bgWhite .container .row .shadow {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+  .bgLightBlue .profit,
+  .invest {
+    .smart {
+      transform: translateX(0) !important;
+    }
+    div {
+      width: 50%;
+    }
+  }
+  .bgGradient {
+    input {
+      width: 50% !important;
+    }
+    button {
+      padding: 0.5rem 1rem !important;
+    }
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 8px;
+  }
+  header {
+    li {
+      display: none !important;
+    }
+    .menu {
+      display: block;
+    }
+  }
+  .section2 {
+    padding: 0 12rem;
+  }
+  .section3 {
+    flex-direction: column;
+    div {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .bgWhite .container {
+    h3 {
+      margin: 0 !important;
+      text-align: center;
+      width: 100% !important;
+    }
+    .row {
+      flex-direction: column;
+      align-items: center;
+      .shadow {
+        max-width: 50% !important;
+      }
+    }
+  }
+  .bgLightBlue {
+    padding-bottom: 0 !important;
+    .container {
+      h4 {
+        padding: 0;
+      }
+      .invest {
+        flex-direction: column;
+        margin-top: 5rem !important;
+        div {
+          width: 100%;
+          text-align: center;
+          
+          p{
+              padding: 0;
+          }
+        }
+      }
+      .statistic {
+        position: relative;
+        width: 100%;
+      }
+      .profit {
+        flex-direction: column;
+        margin: 0;
+        padding-top: 10rem;
+        div{
+            width: 100%;
+            text-align: center;
+            button{
+                margin-top: 0!important;
+            }
+        }
+      }
+    }
+  }
+  .bgGradient .subscribe {
+    text-align: center;
+  }
+  .section8 {
+    span {
+      font-size: 2rem !important;
+    }
+  }
+}
+@media (max-width: 576px) {
+    html {
+        font-size: 6px;
+      }
+    .container{
+        padding: 0 2rem;
+    }
+}

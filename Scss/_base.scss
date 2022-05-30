@@ -1,0 +1,112 @@
+html {
+  font-size: 10px;
+}
+* {
+  font-family: "Rubik", sans-serif;
+}
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: $blue;
+  overflow-x: hidden;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: $white;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    color: $lightBlue;
+  }
+}
+img {
+  max-width: 100%;
+}
+//Font Size
+.fs {
+  &-10 {
+    font-size: 1rem;
+  }
+  &-12 {
+    font-size: 1.2rem;
+  }
+  &-14 {
+    font-size: 1.4rem;
+  }
+  &-16 {
+    font-size: 1.6rem;
+  }
+  &-18 {
+    font-size: 1.8rem;
+  }
+  &-20 {
+    font-size: 2rem;
+  }
+  &-32 {
+    font-size: 3.2rem;
+  }
+  &-40 {
+    font-size: 4rem;
+  }
+  &-64 {
+    font-size: 6.4rem;
+  }
+}
+//Font Weight
+.fw {
+  &-thin {
+    font-weight: 100 !important;
+  }
+  &-light {
+    font-weight: 300 !important;
+  }
+  &-regular {
+    font-weight: 400 !important;
+  }
+  &-medium {
+    font-weight: 500 !important;
+  }
+  &-semiBold {
+    font-weight: 600 !important;
+  }
+  &-bold {
+    font-weight: 700 !important;
+  }
+}
+//Color
+.text- {
+  &blue {
+    color: $blue;
+  }
+  &light-blue {
+    color: $lightBlue;
+  }
+}
+//Input-Select
+%hash {
+  height: 3rem;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.2rem;
+}
+
+input {
+  @extend %hash;
+  width: 40%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid $gray;
+  outline: none;
+}
+select {
+  @extend %hash;
+  width: 20%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid $gray;
+  outline: none;
+}
+
